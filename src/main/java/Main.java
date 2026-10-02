@@ -1,24 +1,13 @@
-import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
-import util.Conexao;
-import view.TelaPrincipal;
+import view.TelaDemonstracao;
 
-// Classe que inicia o programa
+// Inicia a tela de demonstracao da Escola Musical (nao precisa de banco de dados)
 public class Main {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            // Antes de abrir o sistema, verifica se o banco esta ligado
-            if (!Conexao.testarConexao()) {
-                JOptionPane.showMessageDialog(null,
-                        "Nao foi possivel conectar ao banco de dados.\n"
-                        + "Verifique se o MySQL esta ligado e se o script\n"
-                        + "04_Banco_de_Dados/criacao_banco.sql foi executado.",
-                        "Erro de conexao", JOptionPane.ERROR_MESSAGE);
-                return;
-            }
-            TelaPrincipal tela = new TelaPrincipal();
+            TelaDemonstracao tela = new TelaDemonstracao();
             tela.setVisible(true);
         });
     }
