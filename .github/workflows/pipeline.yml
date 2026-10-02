@@ -20,5 +20,5 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Compilar o projeto e rodar os testes unitarios
-        run: mvn -f 05_Codigo_Java/pom.xml test
+      - name: compilar e rodar os testes
+        run: mvn test
