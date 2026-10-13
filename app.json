@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "Crédito Caixa",
+    "slug": "credito-caixa-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "creditocaixa",
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
